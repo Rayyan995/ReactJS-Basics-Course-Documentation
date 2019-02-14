@@ -43,7 +43,7 @@
         this.count++;
     }
     ```
-    Then we define the event by Assigning ` increment ` to the attribute ` onclick ` of the ` button `. Here we modify only ` render ` method.
+    Then we define the event by Assigning ` increment ` to the attribute ` onClick ` of the ` button `. Here we modify only ` render ` method.
     ```
     render() {
         return (
@@ -55,7 +55,7 @@
         );
     }
     ```
-    Until now we expect that the counter should be incremented. However, we get this error: ` TypeError: this is undefined ` on hitting the button. What's going wrong? In the ` increment ` function we access ` this.count ` but ` this ` here does not refer to the ` Counter ` object. It actually refers to ` undefined `[Till now I do not know what it exactly refers whether the window or the button]. To solve this issue we have two ways:
+    Until now we expect that the counter should be incremented. However, we get this error: ` TypeError: this is undefined ` on hitting the button. What's going wrong? In the ` increment ` function we access ` this.count ` but when assigning this ` function ` to ` onClick ` attribute ` this ` here does not refer to the ` Counter ` object. It actually refers to ` undefined `[Till now I do not know what it exactly refers to whether the window or the button]. To solve this issue we have two ways:
          * ` bind ` the ` Counter ` object with ` increment ` function.
          ` onClick={ this.increment.bind( this ) } `.
          * Use *arrow* function.

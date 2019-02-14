@@ -7,7 +7,7 @@
     import { render } from 'react-dom';
     ```
     Note: I expect that this syntax ` { render } ` is **destructuring** syntax in JavaScript which allows us to extract certain pieces from large data structures. Here we extract only ` render ` function from ` react-dom ` library.
-    2. To define a **component** to be rendered, we define a class for that component that ` extends ` from ` React.Component ` class which contains a long list of methods(that we will see later) to manage components. For now we will **define or override**(not sure till now) ` render ` method which is used to **render** that component. ` render ` should return a **JSX**(JavaScript XML) node. **JSX** is an XML-like syntax used to draw React components. ` render ` must return a single root node(This node can wrap any number of nodes nested together. The restriction to return one parent node with no siblings).
+    2. To define a **component** to be rendered, we define a class for that component which ` extends ` ` React.Component ` class which contains a long list of methods(that we will see later) to manage components. For now we will **override** ` render ` method which is used to **render** that component. ` render ` should return a **JSX**(JavaScript XML) node. **JSX** is an XML-like syntax used to draw React components. ` render ` must return a single root node(This node can wrap any number of nodes nested together. The restriction to return one parent node with no siblings).
     ```
     class AppComponent extends React.Component {
         render() {
@@ -30,4 +30,4 @@
     ```
     render( <AppComponent/>, window.document.getElementById("app") );
     ```    
-        * Hint: to use any method ` document ` we should precede it with ` window.document ` since this code is not lying in the ` window `.
+        * Hint: to use any method on ` document ` we should precede it with ` window ` since this code is not lying in the ` window `.

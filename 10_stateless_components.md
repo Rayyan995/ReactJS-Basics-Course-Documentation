@@ -1,8 +1,8 @@
 # Stateless Components
 * We have two kinds of *Components* in **ReactJS**:
-    * *Stateful Components*
+    * **Stateful Components**  
     These are *components* that have ` state ` like the ` Counter ` *Component* in our project.
-    * *Stateless Components*
+    * **Stateless Components**  
     These are *Components* that do not need ` state `. It may be a *static component* that does not change. *Components* that can be *stateless* in our project are ` Person `, ` Home `, and ` Header `.
 * Having *stateless components* as many as possible is good. ` state ` has significant consequences on **behavior, performance, and testability**. Having **many** *stateful components* in complex applications creates **unpredictable** behavior as well as makes it really **hard** to **test** the application. So on the other hand, having **many** *stateless components* makes your application **more manageable and testable**.
 * A *stateless component* actually is not more than a ` function ` that returns a **JSX** to be rendered and optionally accepts ` props `. So with *stateless components* we do not need to extend ` React.Component ` any more. Let's convert the ` Person ` ` Component ` to a *stateless component*.  

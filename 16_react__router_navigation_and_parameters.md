@@ -13,7 +13,7 @@ const Header = (props) => {
     );  
 };
 ```
-We just changed the ` <a> ` tag to ` <Link> ` tag and the ` href ` attribute to ` to ` attribute. These are required by ` react-router ` which will eventually be converted into ` <a> ` tag.
+We just changed the ` <a> ` tag to ` <Link> ` tag and the ` href ` attribute to ` to ` attribute. These are required by ` react-router ` which will eventually be converted into ` <a> ` tag in the browser.
 * To add another way to navigate from a ` Route ` to another one(let's say from ` Person ` to ` Home `) we use the ` browserHistory.push( "/home" ) ` which we can wrap in a ` function ` and assign it to ` onClick ` event handler of a button or whatever.
 * Now let's see how we can pass parameters from a ` Component ` to another. Let's accept the ` ID ` of the ` Person `. We do that by using ` props.params ` and then use whatever param names we want to accept.
 ```

@@ -2,7 +2,7 @@
 * Let's take a step further and render **multiple** components.
 * To do that let's create a folder to hold all of our components. We make this folder under ` src/app/ ` and we name it ` components ` for convention.
 * Under this folder we can make a **.JS** file for each component we wanna **define**. Remember that in these files we will just **define** the component. However, we will render it in **index.js** file.
-* Let's make component and name it ` Home `.
+* Let's define a ` Component ` and name it ` Home `.
     1. Create a file and name it ` Home.js `
     2. Import only ` react `. No need here to import ` react-dom ` since we will not use any thing from it even ` render ` method.
     ```

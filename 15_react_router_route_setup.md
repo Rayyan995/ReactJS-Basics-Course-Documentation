@@ -50,9 +50,9 @@ class AppComponent extends React.Component {
 }
 render( <AppComponent/>, window.document.getElementByID( "app" ) );
 ```
-    * from ` 'react-router' ` we imported ` Router `: Which will be the parent of all pages(routes) and ` Route ` which is used to define a page.
+    * From ` 'react-router' ` we imported ` Router `: Which will be the parent of all pages(routes) and ` Route ` which is used to define a page.
     * For each ` Route ` we set two attributes:
-        * ` path ` which defines the URL for this page. For example if our website is name ` www.example.com ` the first ` Route ` which has a ` path ` ="home" can be reached using the URL: ` www.example.com/home `.
+        * ` path ` which defines the URL for this page. For example if our website is named ` www.example.com ` the first ` Route ` which has a ` path ` ="home" can be reached using the URL: ` www.example.com/home `.
         * ` component ` which is the component to be rendered with this URL.
 * We have two forms of URLs: [We will use ` www.example.com/home ` to illustrate that]:
     * ` www.example.com/#/home `(default form).  
@@ -67,7 +67,7 @@ render( <AppComponent/>, window.document.getElementByID( "app" ) );
         ```
         <Router history={ browserHistory }>
         ```
-        * On the **server** we need to configure it to support this form. In our case we use ` webPack ` server all we need to do is to head to ` package.json ` file and add this ` --history-api-fallback ` to the ` buils ` script.
+        * On the **server** we need to configure it to support this form. In our case we use ` webPack ` server all we need to do is to head to ` package.json ` file and add this ` --history-api-fallback ` to the ` build ` script.
 * Now we need to display the ` Header ` ` Component ` on top of our application pages. So let's create a ` Component ` named ` Root ` that renders the ` Header ` component and whatever other ` Component ` given to it as a *child* using ` props.children `.
 ```
 import React from 'react';
@@ -102,7 +102,7 @@ class AppComponent extends React.Component {
 render( <AppComponent/>, window.document.getElementByID( "app" ) );
 ```
 Notice that we nested ` Home ` and ` Person ` routes in the ` Root ` which we specified the ` path ` attribute to be **/** so the ` path ` of ` Home ` will be **/home** and ` Person ` **/person**.
-* Now what is displayed when the user hit ` www.example.com/ ` without ` home ` nor ` person`? Only the ` Header ` ` Component `. Now we need to display a ` Route ` as the default. We make that using the ` IndexRoute ` which we should ` import ` from ` 'react-router' ` in ` AppComponent `.
+* Now what is displayed when the user hits ` www.example.com/ ` without ` home ` nor ` person`? Only the ` Header ` ` Component `. Now we need to display a ` Route ` as the default. We make that using the ` IndexRoute ` which we should ` import ` from ` 'react-router' ` in ` AppComponent `.
 ```
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 ```  
@@ -120,4 +120,4 @@ render() {
     );
 }
 ```
-Notice that in ` IndexRoute ` we specify only the ` component ` attribute no need gor the ` path ` attribute.
+Notice that in ` IndexRoute ` we specify only the ` component ` attribute no need for the ` path ` attribute.

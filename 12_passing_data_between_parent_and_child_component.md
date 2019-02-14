@@ -37,7 +37,7 @@
     }
     ```
         * Here we added a ` state ` object to the ` AppComponent ` and defined a property in that ` state ` named ` appName ` and assigned it in the ` constructor ` initial value "General App".
-        * We defined a ` function ` named ` changeAppName ` that change that property by calling ` setState ` method. This ` function ` accepts the new app name which will be passed from the *child component* ` Person `.
+        * We defined a ` function ` named ` changeAppName ` that changes that property by calling ` setState ` method. This ` function ` accepts the new app name which will be passed from the *child component* ` Person `.
         * We added an ` <h1> ` tag and set its value to ` appName ` property in the ` state ` object so once this property is changed by invoking the ` changeAppName ` ` function ` this `<h1> ` tag is rerendered.
         * We pass this ` changeAppName ` ` function ` to the *child component* to be called from there with the new app name. Notice that we *binded* ` this ` with ` changeAppName ` ` function `.
     * In ` Person `.
@@ -64,4 +64,4 @@
         );
     }
     ```
-    Here we just accepted the ` changeAppName ` ` function ` from ` props ` and assigned it to the event handler of a button.
+    Here we just accepted the ` changeAppName ` ` function ` from ` props `, assigned it to the event handler of a button and passed to it a new name defined here in the *child component* ` Person `.

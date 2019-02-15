@@ -2,7 +2,7 @@
 * Until now hitting the items in the ` Header ` does not navigate. Let's add this navigation. To do that we modify the ` Header ` ` Component `.
 ```
 import React from 'react';
-const Header = (props) => {
+export const Header = (props) => {
     return(
         <nav>
           <ul>
@@ -18,7 +18,7 @@ We just changed the ` <a> ` tag to ` <Link> ` tag and the ` href ` attribute to 
 * Now let's see how we can pass parameters from a ` Component ` to another. Let's accept the ` ID ` of the ` Person `. We do that by using ` props.params ` and then use whatever param names we want to accept.
 ```
 import React from 'react';
-class Person extends React.Component {
+export class Person extends React.Component {
     render() {
         return (
             <div>

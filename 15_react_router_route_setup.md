@@ -6,7 +6,7 @@
     * ` Header `: which will contain a ` nav ` bar used to navigate between pages in the application.
     ```
     import React from 'react';
-    const Header = (props) => {
+    export const Header = (props) => {
         return(
             <nav>
               <ul>
@@ -20,7 +20,7 @@
     * ` Person `: which will be a basic page displaying the id of the current person.
     ```
     import React from 'react';
-    class Person extends React.Component {
+    export class Person extends React.Component {
         render() {
             return (
                 <div>
@@ -72,10 +72,10 @@ render( <AppComponent/>, window.document.getElementByID( "app" ) );
 ```
 import React from 'react';
 import { Header } from 'Header';
-const Root = (props) => {
+export const Root = (props) => {
     return (
         <Header/>
-        { this.props.children }
+        { props.children }
     );
 }
 ```

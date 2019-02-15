@@ -10,6 +10,10 @@ The course can be find [here](https://www.youtube.com/playlist?list=PL55RiY5tL51
 * Basic JavaScript.
 * Basic ECMAScript 6 syntax.
 * Basic HTML & CSS.
+## Course Work
+* Through the course I have worked on this [project](https://github.com/hossamnasser938/ReactJS-Basics-Project) for practice.
+* On Finishing the course I have taken an application that I built before using Android and converted it to ReactJS for practice.
+You can find that project [here](https://github.com/hossamnasser938/Miwok-App-Using-ReactJS).
 ## Contents
 1. [What is React?](https://github.com/hossamnasser938/ReactJS-Basics-Course-Documentation/new/master?readme=1).
 2. [Setup Workspace with Webpack](https://github.com/hossamnasser938/ReactJS-Basics-Course-Documentation/blob/master/Documentation%20Files/02_setup_workspace_with_webpack.md).

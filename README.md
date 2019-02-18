@@ -1,7 +1,8 @@
 # ReactJS-Basics-Course-Documentation
 ## Overview
 The course can be find [here](https://www.youtube.com/playlist?list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS). It is taught by 
-**Maximilian Schwarzmuller**. It gives you a breif introduction to the popular framework ` ReactJS `. 
+**Maximilian Schwarzmuller**. It gives you a breif introduction to the popular framework ` ReactJS `. This course has a next part
+which is this [tutorial](https://github.com/hossamnasser938/ReactJS-Redux-Basics-Course-Documentation/blob/master/README.md). 
 ## Comments
 * The course is structured well.
 * The instructors explains evertthing very well.
